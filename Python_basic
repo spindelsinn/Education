@@ -1,6 +1,26 @@
 # input and open file
 input Get data from the “outside world”. This might be reading data from a ﬁle, or even some kind of sensor like a microphone or GPS. In our initial programs, our input will come from the user typing data on the keyboard.
 output Display the results of the program on a screen or store them in a ﬁle or perhaps write them to a device like a speaker to play music or speak text.
-
 name = input('Enter file:') 
+
 handle = open(name, 'r') 
+
+type(x) - what type a value has  
+
+ //  % - modulus operator
+ 
+ x is y # x is the same as y 
+ x is not y # x is not the same as y
+
+try:
+  fahr = float(inp) 
+except: 
+  print('Please enter a number')
+  
+max(), min(), len() 
+int(), float(), str()
+
+import random
+random.random() -  returns a random ﬂoat between 0.0 and 1.0 (including 0.0 but not 1.0)
+random.randint(5, 10) -returns int between 5 and 10
+random.choice(t) -To choose an element from a sequence at random. Example t=[1,2,3]
