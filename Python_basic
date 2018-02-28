@@ -23,4 +23,7 @@ int(), float(), str()
 import random
 random.random() -  returns a random ﬂoat between 0.0 and 1.0 (including 0.0 but not 1.0)
 random.randint(5, 10) -returns int between 5 and 10
-random.choice(t) -To choose an element from a sequence at random. Example t=[1,2,3]
+random.choice(t) -To choose an element from a sequence at random. Example t=[1,2,3] or just a string
+random.randrange(10,20,2) - 2 is a step in range from 10 to 20.
+random.shuffle(r) - shuffle elements r is a range. Output is [0, 4, 1, 6, 8, 3, 2, 5, 9, 7] 
+random.sample(range(50),10) - take 10 elements from 0 to 50. Output [22, 29, 30, 14, 16, 17, 32, 48, 2, 19] 
