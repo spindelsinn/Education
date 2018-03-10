@@ -27,3 +27,20 @@ random.choice(t) -To choose an element from a sequence at random. Example t=[1,2
 random.randrange(10,20,2) - 2 is a step in range from 10 to 20.
 random.shuffle(r) - shuffle elements r is a range. Output is [0, 4, 1, 6, 8, 3, 2, 5, 9, 7] 
 random.sample(range(50),10) - take 10 elements from 0 to 50. Output [22, 29, 30, 14, 16, 17, 32, 48, 2, 19] 
+
+import math
+pow(num, power): возведение числа num в степень power
+sqrt(num): квадратный корень числа num
+ceil(num): округление числа до ближайшего наибольшего целого
+floor(num): округление числа до ближайшего наименьшего целого
+factorial(num): факториал числа
+degrees(rad): перевод из радиан в градусы
+radians(grad): перевод из градусов в радианы
+cos(rad): косинус угла в радианах
+sin(rad): синус угла в радианах
+tan(rad): тангенс угла в радианах
+acos(rad): арккосинус угла в радианах
+asin(rad): арксинус угла в радианах
+atan(rad): арктангенс угла в радианах
+log(n, base): логарифм числа n по основанию base
+log10(n): десятичный логарифм числа n
