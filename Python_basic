@@ -19,6 +19,10 @@ except:
   
 max(), min(), len() 
 int(), float(), str()
+>>> 'a' in 'banana' 
+True 
+
+The dir() method tries to return a list of valid attributes of the object. If empty - list of local variables.
 
 import random
 random.random() -  returns a random ﬂoat between 0.0 and 1.0 (including 0.0 but not 1.0)
@@ -44,3 +48,6 @@ asin(rad): арксинус угла в радианах
 atan(rad): арктангенс угла в радианах
 log(n, base): логарифм числа n по основанию base
 log10(n): десятичный логарифм числа n
+
+
+str 72
