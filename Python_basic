@@ -59,96 +59,53 @@ expandtabs():Replaces Tab character With Spaces
 encode():returns encoded string of given string 
 find():Returns the Highest Index of Substring (count letters not words, can be rfind(fron right edge))
 format():formats string into nicer output 
-Python String index() 
-Returns Index of Substring 
-Python String isalnum() 
-Checks Alphanumeric Character 
-Python String isalpha() 
-Checks if All Characters are Alphabets 
-Python String isdecimal() 
-Checks Decimal Characters 
-Python String isdigit() 
-Checks Digit Characters 
-Python String isidentifier() 
-Checks for Valid Identifier 
-Python String islower() 
-Checks if all Alphabets in a String are Lowercase 
-Python String isnumeric() 
-Checks Numeric Characters 
-Python String isprintable() 
-Checks Printable Character 
-Python String isspace() 
-Checks Whitespace Characters 
-Python String istitle() 
-Checks for Titlecased String 
-Python String isupper() 
-returns if all characters are uppercase characters 
-Python String join() 
-Returns a Concatenated String 
-Python String ljust() 
-returns left-justified string of given width 
-Python String rjust() 
-returns right-justified string of given width 
-Python String lower() 
-returns lowercased string 
-Python String upper() 
-returns uppercased string 
-Python String swapcase() 
-swap uppercase characters to lowercase; vice versa 
-Python String lstrip() 
-Removes Leading Characters 
-Python String rstrip() 
-Removes Trailing Characters 
-Python String strip() 
-Removes Both Leading and Trailing Characters 
-Python String partition() 
-Returns a Tuple 
-Python String maketrans() 
-returns a translation table 
-Python String rpartition() 
-Returns a Tuple 
-Python String translate() 
-returns mapped charactered string 
-Python String replace() 
-Replaces Substring Inside 
-Python String rfind() 
-Returns the Highest Index of Substring 
-Python String rindex() 
-Returns Highest Index of Substring 
-Python String split() 
-Splits String from Left 
-Python String rsplit() 
-Splits String From Right 
-Python String splitlines() 
-Splits String at Line Boundaries 
-Python String startswith() 
-Checks if String Starts with the Specified String 
-Python String title() 
-Returns a Title Cased String 
-Python String zfill() 
-Returns a Copy of The String Padded With Zeros 
-Python String format_map() 
-Formats the String Using Dictionary 
-Python any() 
-Checks if any Element of an Iterable is True 
-Python all() 
-returns true when all elements in iterable is true 
-Python ascii() 
-Returns String Containing Printable Representation 
-Python bool() 
-Coverts a Value to Boolean 
-Python bytearray() 
-returns array of given byte size 
-Python bytes() 
-returns immutable bytes object 
-Python compile() 
-Returns a Python code object 
-Python complex() 
-Creates a Complex Number 
-Python enumerate() 
-Returns an Enumerate Object 
-Python filter() 
-constructs iterator from elements which are true 
+index():Returns Index of Substring(just find in string) 
+isalnum(): if not letters or numbers -> error  
+isalpha():Checks if All Characters are Alphabets 
+isdecimal():Checks Decimal Characters 
+isdigit():Checks Digit Characters 
+isidentifier():Checks is it good identifier for Python?(no spaces or no starts with numbers)
+islower():Checks if all Alphabets in a String are Lowercase 
+isnumeric():is it Numeric Characters? 
+isprintable():Characters that occupies printing space on the screen-printable characters(letters and symbols digits punctuation whitespace)
+isspace():Checks Whitespace Characters 
+istitle():Checks for Titlecased String 
+isupper():returns if all characters are uppercase characters 
+join():Returns a Concatenated String 
+ljust(width,fill):returns left-justified string of given width(for constant width of strings) 
+rjust(width,fill):returns right-justified string of given width(for constant width of strings) 
+lower():returns lowercased string 
+upper():returns uppercased string 
+swapcase():swap uppercase characters to lowercase; vice versa 
+lstrip():Removes Characters or spaces from left 
+rstrip():Removes Characters or spaces from right
+strip():Removes Characters or spaces from left and right 
+partition():Returns a Tuple with 3 elemets 1- before separator, separator and after separator 
+maketrans():returns a translation table or connect strings to a dictionary
+rpartition():same as partition() but start search from right 
+translate(): translate with table which was created by maketrans() 
+str.replace(old, new [, count]) :Replaces Substring Inside 
+str.rfind(sub[, start[, end]] ):Returns the Highest Index of Substring 
+str.rindex(sub[, start[, end]] ) :Returns Highest Index of Substring 
+str.split([separator [, maxsplit]]):Splits String from Left 
+str.rsplit([separator [, maxsplit]]):Splits String From Right 
+str.splitlines([keepends]): spit by lines and ret list
+str.startswith(prefix[, start[, end]]):Checks if String Starts with the Specified String 
+str.title(): returns a string with first letter of each word capitalized 
+str.zfill(width):returns a copy of the string with '0' characters padded to the left. 
+format_map() similar to str.format(**mapping) except that str.format(**mapping) creates a new dictionary whereas str.format_map(mapping) doesn't
+
+
+any():Checks if any Element of an Iterable is True 
+all():returns true when all elements in iterable is true 
+ascii():Returns String Containing Printable Representation 
+bool():Coverts a Value to Boolean 
+bytearray():returns array of given byte size 
+bytes():returns immutable bytes object 
+compile():Returns a Python code object 
+complex():Creates a Complex Number 
+enumerate():Returns an Enumerate Object 
+filter():constructs iterator from elements which are true 
 Python float() 
 returns floating point number from number, string 
 Python input() 
