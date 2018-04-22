@@ -3,7 +3,7 @@ input Get data from the “outside world”. This might be reading data from a �
 output Display the results of the program on a screen or store them in a ﬁle or perhaps write them to a device like a speaker to play music or speak text.
 name = input('Enter file:') 
 
-handle = open(name, 'r') 
+handle = open(name, 'r') - returns file handle
 
 type(x) - what type a value has  
 
@@ -96,6 +96,10 @@ str.zfill(width):returns a copy of the string with '0' characters padded to the 
 format_map() similar to str.format(**mapping) except that str.format(**mapping) creates a new dictionary whereas str.format_map(mapping) doesn't
 
 
+
+
+
+============================================================================================
 any():Checks if any Element of an Iterable is True 
 all():returns true when all elements in iterable is true 
 ascii():Returns String Containing Printable Representation 
