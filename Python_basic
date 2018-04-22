@@ -115,7 +115,8 @@ del list.[index] - delete element by index
 list.remove(element) - delete by name or value
 list.clear - clear
 
-
+Chapter 9
+Dictionaries 105
 
 ============================================================================================
 any():Checks if any Element of an Iterable is True 
