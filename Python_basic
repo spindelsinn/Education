@@ -3,7 +3,11 @@ input Get data from the “outside world”. This might be reading data from a �
 output Display the results of the program on a screen or store them in a ﬁle or perhaps write them to a device like a speaker to play music or speak text.
 name = input('Enter file:') 
 
-handle = open(name, 'r') - returns file handle
+fout = open('output.txt', 'w')
+fout.write(line1)
+fout.close()
+
+a=[1,2,3] -list
 
 type(x) - what type a value has  
 
@@ -49,7 +53,7 @@ atan(rad): арктангенс угла в радианах
 log(n, base): логарифм числа n по основанию base
 log10(n): десятичный логарифм числа n
 
-STring methods
+String methods
 capitalize(): Converts first character to Capital Letter 
 center():Pads string with specified character (stringshifting, can be filled)
 casefold():converts to casefolded strings (to small letters)
@@ -95,7 +99,21 @@ str.title(): returns a string with first letter of each word capitalized
 str.zfill(width):returns a copy of the string with '0' characters padded to the left. 
 format_map() similar to str.format(**mapping) except that str.format(**mapping) creates a new dictionary whereas str.format_map(mapping) doesn't
 
-
+List methods
+list.append (element) - add to list
+list.insert(<position, element) - Inserts an elements at specified position
+List1.extend(List2) - add list2 to list1
+sum(List) - Calculates sum of all the elements of List
+List.count(element) - how many times element in List
+len(list_name) - Calculates total length of List
+List.index(element[,start[,end]]) - Returns the index of first element. Start and End index are not necessary parameters
+min(List) - smallest element in list
+max(List) - biggest element in list
+List.sort(reverse=True) - sorting
+list.pop([index]) - takes one element
+del list.[index] - delete element by index
+list.remove(element) - delete by name or value
+list.clear - clear
 
 
 
