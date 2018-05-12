@@ -56,6 +56,7 @@ log(n, base): логарифм числа n по основанию base
 log10(n): десятичный логарифм числа n
 
 String methods
+string.punctuation -  let Python tell us the list of characters that it considers “punctuation”
 capitalize(): Converts first character to Capital Letter 
 center():Pads string with specified character (stringshifting, can be filled)
 casefold():converts to casefolded strings (to small letters)
@@ -89,7 +90,7 @@ strip():Removes Characters or spaces from left and right
 partition():Returns a Tuple with 3 elemets 1- before separator, separator and after separator 
 maketrans():returns a translation table or connect strings to a dictionary
 rpartition():same as partition() but start search from right 
-translate(): translate with table which was created by maketrans() 
+translate(): translate with table which was created by maketrans() (line=line.translate(line.maketrans('','', string.punctuation))) - del all punctuation
 str.replace(old, new [, count]) :Replaces Substring Inside 
 str.rfind(sub[, start[, end]] ):Returns the Highest Index of Substring 
 str.rindex(sub[, start[, end]] ) :Returns Highest Index of Substring 
@@ -117,8 +118,16 @@ del list.[index] - delete element by index
 list.remove(element) - delete by name or value
 list.clear - clear
 
-Chapter 9
-Dictionaries 105
+Dictionaries
+eng2sp=dict()
+eng2sp['one']='uno'
+{'one':'uno'}
+
+'one' in eng2sp - True(works only for keys)
+
+To find values: create a list with values from dict  vals=list(eng2sp.values()) 
+'uno' in vals? - yes 
+
 
 ============================================================================================
 any():Checks if any Element of an Iterable is True 
