@@ -128,6 +128,22 @@ eng2sp['one']='uno'
 To find values: create a list with values from dict  vals=list(eng2sp.values()) 
 'uno' in vals? - yes 
 
+cmp(dict1, dict2)- Compares elements of both dict
+len(dict)- Gives the total length of the dictionary. This would be equal to the number of items in the dictionary.
+str(dict) - Produces a printable string representation of a dictionary
+type(variable)-Returns the type of the passed variable. If passed variable is dictionary, then it would return a dictionary type.
+
+dict.clear() - Removes all elements of dictionary dict
+dict.copy()-Returns a shallow copy of dictionary dict
+dict.fromkeys()-Create a new dictionary with keys from seq and values set to value
+dict.get(key, default=None)-For key key, returns value or default if key not in dictionary
+dict.has_key(key)-Returns true if key in dictionary dict, false otherwise
+dict.items()-Returns a list of dict's (key, value) tuple pairs
+dict.keys()-Returns list of dictionary dict's keys
+dict.setdefault(key, default=None)-Similar to get(), but will set dict[key]=default if key is not already in dict
+dict.update(dict2)-Adds dictionary dict2's key-values pairs to dict
+dict.values()-Returns list of dictionary dict's values
+
 
 ============================================================================================
 any():Checks if any Element of an Iterable is True 
