@@ -144,6 +144,27 @@ dict.setdefault(key, default=None)-Similar to get(), but will set dict[key]=defa
 dict.update(dict2)-Adds dictionary dict2's key-values pairs to dict
 dict.values()-Returns list of dictionary dict's values
 
+Tuples
+You can’t modify the elements of a tuple, but you can replace one tuple with
+another:
+>>>t=('A',)+t[1:]
+>>>print(t)
+('A','b','c','d','e')
+
+When two or more variables on a left side then it is tuple
+>>>addr='monty@python.org'
+>>>uname, domain=addr.split('@')
+
+To sort of dict keys
+>>>d={'a':10,'b':1,'c':22}
+>>>t=list(d.items())
+>>>t
+[('b',1), ('a',10), ('c',22)]
+>>>t.sort()
+>>>t
+[('a',10), ('b',1), ('c',22)
+
+10.7
 
 ============================================================================================
 any():Checks if any Element of an Iterable is True 
