@@ -145,6 +145,8 @@ dict.update(dict2)-Adds dictionary dict2's key-values pairs to dict
 dict.values()-Returns list of dictionary dict's values
 
 Tuples
+f you want to use a sequence as a dictionary key, you have to use an immutable type like a tuple or string.
+If you are passing a sequence as an argument to a function, using tuples reduces the potential for unexpected behavior due to aliasing.
 You can’t modify the elements of a tuple, but you can replace one tuple with
 another:
 >>>t=('A',)+t[1:]
@@ -164,7 +166,8 @@ To sort of dict keys
 >>>t
 [('a',10), ('b',1), ('c',22)
 
-10.7
+for last, first in directory:
+   print(first, last, directory[last,first])
 
 ============================================================================================
 any():Checks if any Element of an Iterable is True 
