@@ -222,6 +222,8 @@ result = pattern.findall('AV Analytics Vidhya AV')
 print result
 ['AV', 'AV']
 
+
+
 ============================================================================================
 any():Checks if any Element of an Iterable is True 
 all():returns true when all elements in iterable is true 
