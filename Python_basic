@@ -222,6 +222,7 @@ result = pattern.findall('AV Analytics Vidhya AV')
 print result
 ['AV', 'AV']
 
+Network
 
 
 ============================================================================================
