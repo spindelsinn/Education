@@ -224,6 +224,38 @@ print result
 
 Network
 
+Server
+import socket
+sock = socket.socket() #create socket
+sock.bind(('', 9090)) #connect sock to our port
+sock.listen(1)       # max connections in a line
+conn, addr = sock.accept() # return info about connected  
+print 'connected:', addr
+while True:
+    data = conn.recv(1024) # recieve data from client
+    if not data:
+        break
+    conn.send(data.upper()) # send data to client
+conn.close()
+
+CLIENT
+import socket
+sock = socket.socket()
+sock.connect(('localhost', 9090))
+sock.send('hello, world!')
+data = sock.recv(1024)
+sock.close()
+print data
+
+socket.accept() - Accept a connection.return (conn, address) conn is a new socket object usable to send and receive data
+socket.bind(address) Bind the socket to address. The socket must not already be bound
+socket.close() - close connect but not right now. for right now use shutdown() before close() 
+socket.connect(address)
+socket.connect_ex(address) - same as connect but return an error indicator instead of raising an exception. 0 -operation succeeded, otherwise the value of the errno variable 
+socket.fileno()- Return the socket’s file descriptor (a small integer). This is useful with select.select()
+socket.getpeername()Return the remote address to which the socket is connected. useful to find out the port number of a remote IPv4/v6 socket, for instance. 
+socket.getsockname()Return the socket’s own address. This is useful to find out the port number of an IPv4/v6 socket, for instance
+
 
 ============================================================================================
 any():Checks if any Element of an Iterable is True 
