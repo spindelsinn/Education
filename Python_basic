@@ -252,10 +252,32 @@ socket.bind(address) Bind the socket to address. The socket must not already be 
 socket.close() - close connect but not right now. for right now use shutdown() before close() 
 socket.connect(address)
 socket.connect_ex(address) - same as connect but return an error indicator instead of raising an exception. 0 -operation succeeded, otherwise the value of the errno variable 
-socket.fileno()- Return the socket’s file descriptor (a small integer). This is useful with select.select()
+socket.detach() - Put the socket object into closed state without actually closing
+socket.dup() - Duplicate the socket.
+socket.fileno() - Return the socket’s file descriptor (a small integer), or -1 on failure.This is useful with select.select()
+socket.get_inheritable() -Get the inheritable flag of the socket’s file descriptor or socket’s handle: True if inherited in child processes, False if it cannot
 socket.getpeername()Return the remote address to which the socket is connected. useful to find out the port number of a remote IPv4/v6 socket, for instance. 
 socket.getsockname()Return the socket’s own address. This is useful to find out the port number of an IPv4/v6 socket, for instance
+socket.getsockopt(level, optname[, buflen]) - Return the value of the given socket option. The needed symbolic constants (SO_* etc.) are defined in this module. If buflen is absent, an integer option is assumed and its integer value is returned by the function. If buflen is present, it specifies the maximum length of the buffer used to receive the option in, and this buffer is returned as a bytes object. It is up to the caller to decode the contents of the buffer (see the optional built-in module struct for a way to decode C structures encoded as byte strings).
+socket.gettimeout() - Return the timeout in seconds (float) associated with socket operations, or None if no timeout is set. This reflects the last call to setblocking() or settimeout().
 
+other in https://docs.python.org/3/library/socket.html
+
+urllib
+
+import urllib.request
+fhand=urllib.request.urlopen('http://data.pr4e.org/romeo.txt')
+forline in fhand:
+  print(line.decode().strip())
+  
+ 
+urllib.request for opening and reading URLs
+urllib.error containing the exceptions raised by urllib.request
+urllib.parse for parsing URLs
+urllib.robotparser for parsing robots.txt files
+
+SSL!
+ 
 
 ============================================================================================
 any():Checks if any Element of an Iterable is True 
