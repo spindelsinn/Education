@@ -277,7 +277,24 @@ urllib.parse for parsing URLs
 urllib.robotparser for parsing robots.txt files
 
 SSL!
- 
+
+JSON or XML
+
+Object-Oriented Programming
+Much like the def keyword does not cause function code to be executed, the classkeyword does not create an object. Instead, the
+class keyword defines a template indicating what data and code will be contained in each object of type PartyAnimal. 
+The class is like a cookie cutter and the objects created using the class are the cookies.
+
+__init__ -  set up some default or initial values for the object whet it's creating
+__del__ - what to do when object destroed(an=PartyAnimal() now its obj and then just make object an int an = 42)
+
+class PartyAnimal:
+ x = 0
+ name=''
+
+class CricketFan(PartyAnimal):
+ points = 0
+Cricket Fan is an extention of PartiAnimal and we can use all Partyanimals vars and methods inside Cricketfan
 
 ============================================================================================
 any():Checks if any Element of an Iterable is True 
