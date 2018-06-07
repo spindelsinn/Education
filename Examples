@@ -26,3 +26,12 @@ print("address in phisical mem:", hex(exist_with_shift))
 command = 'ff write -min '+ hex(exist_with_shift+5) + ' -in ' + '6f7074696f6e616c09'
 print(command)
 os.system(command)
+
+
+
+import sqlite3
+conn=sqlite3.connect('music.sqlite')
+cur=conn.cursor()
+cur.execute('DROP TABLE IF EXISTS Tracks')
+cur.execute('CREATE TABLE Tracks (title TEXT, plays INTEGER)')
+conn.close()
