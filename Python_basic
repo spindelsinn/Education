@@ -3,6 +3,8 @@ input Get data from the “outside world”. This might be reading data from a �
 output Display the results of the program on a screen or store them in a ﬁle or perhaps write them to a device like a speaker to play music or speak text.
 name = input('Enter file:') 
 
+print eval('2 + 4')
+
 if : elif : else :
 
 fout = open('output.txt', 'w')
