@@ -1,2 +1,10 @@
 Simple linear Regression:
 dependable = intercept + coefficient*independable
+
+Cross-validation
+
+MAE - mean absolute error. Diff between predicted an real value
+MSE - mean squared error. 
+RMSE - root mean squared error
+RAE
+RSE
