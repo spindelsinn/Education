@@ -27,7 +27,11 @@ command = 'ff write -min '+ hex(exist_with_shift+5) + ' -in ' + '6f7074696f6e616
 print(command)
 os.system(command)
 
-
+========================================================================================================
+find shortest
+def find_short(s):
+    return min(len(x) for x in s.split())
+========================================================================================================
 
 import sqlite3
 conn=sqlite3.connect('music.sqlite')
