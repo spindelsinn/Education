@@ -1,0 +1,16 @@
+COUNT() is a built in database function that retrieves the number of rows that match the query criteria. 
+To get the total number of rows in a given table, simply issue:
+>>select COUNT(*) from tablename
+
+How many rows with  Canada in table
+>>select COUNT(COUNTRY) from MEDALS where COUNTRY='CANADA'
+
+DISTINCT is used to remove duplicate values from a result set. To retrieve unique values in a column issue:
+>>select DISTINCT columnname from tablename
+
+Example: to know which countries get gold medals, without repeated answers when they have more than one. 
+>>select DISTINCT COUNTRY from MEDALS where MEDALTYPE = 'GOLD'
+
+LIMIT is used for restricting the number of rows retrieved from the database. To retrieve just the first 10 rows in a table:
+>>select * from tablename LIMIT 10
+
