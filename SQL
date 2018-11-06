@@ -55,3 +55,14 @@ DELETE FROM INSTRUCTOR where ins_id=2
 --5b. Retrieve all rows from the table
 SELECT * FROM INSTRUCTOR 
 ;
+
+select all firstnames start with R.
+>>SELECT firstname FROM author where firstname like R%
+
+SELECT title, pages FROM book WHERE pages >=290 AND pages <=300
+or
+SELECT title, pages FROM book WHERE pages between 290 and 300
+
+SELECT firstname, lastname FROM author WHERE country='AU' OR country='BR' 
+or
+SELECT firstname, lastname FROM author WHERE country IN('AU','BR')
