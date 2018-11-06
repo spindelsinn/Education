@@ -66,3 +66,13 @@ SELECT title, pages FROM book WHERE pages between 290 and 300
 SELECT firstname, lastname FROM author WHERE country='AU' OR country='BR' 
 or
 SELECT firstname, lastname FROM author WHERE country IN('AU','BR')
+
+Ascending  order
+>>SELECT title FROM book ORDER BY title
+Descending  order
+>>SELECT title FROM book ORDER BY title desc
+
+
+>>SELECT title, pages FROM book ORDER BY pages 
+Is the same as
+>>SELECT title, pages FROM book ORDER BY 2
